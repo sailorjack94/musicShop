@@ -50,4 +50,9 @@ public class HighWhistleTest {
     public void canPlay(){
         assertEquals("Shrill and whistle-y.", whistle.playMe());
     }
+
+    @Test
+    public void canGetMarkup(){
+        assertEquals(25, whistle.calculateMarkup());
+    }
 }

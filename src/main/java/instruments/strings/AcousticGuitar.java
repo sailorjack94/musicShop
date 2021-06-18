@@ -19,5 +19,4 @@ public class AcousticGuitar extends StringedInstrument implements IPlay {
     public String playMe(){
         return "Soft strumming.";
     }
-
 }

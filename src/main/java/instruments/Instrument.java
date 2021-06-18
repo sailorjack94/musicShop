@@ -1,7 +1,9 @@
 package instruments;
 
 
-public abstract class Instrument {
+import behaviours.ISell;
+
+public abstract class Instrument implements ISell {
 
     private final String family;
     private final int wholesalePrice;
@@ -24,5 +26,9 @@ public abstract class Instrument {
 
     public int getSellPrice(){
         return sellPrice;
+    }
+
+    public int calculateMarkup(){
+        return getSellPrice() - getWholesalePrice();
     }
 }

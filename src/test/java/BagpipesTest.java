@@ -50,4 +50,9 @@ public class BagpipesTest {
     public void canPlay(){
         assertEquals("A roaring skirl.", pipes.playMe());
     }
+
+    @Test
+    public void canGetMarkup(){
+        assertEquals(400, pipes.calculateMarkup());
+    }
 }

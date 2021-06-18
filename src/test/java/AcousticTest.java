@@ -52,4 +52,9 @@ public class AcousticTest {
     public void canPlay(){
         assertEquals("Soft strumming.", guitar.playMe());
     }
+
+    @Test
+    public void canGetMarkup(){
+        assertEquals(65, guitar.calculateMarkup());
+    }
 }
