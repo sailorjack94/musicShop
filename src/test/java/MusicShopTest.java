@@ -64,4 +64,12 @@ public class MusicShopTest {
         assertEquals(1, shop.getStock().size());
 
     }
+
+    @Test
+    public void testTotalProfitCalc(){
+        shop.addStock(whistle);
+        shop.addStock(whistle);
+        shop.addStock(whistle);
+        assertEquals(75, shop.totalProfitInStock());
+    }
 }

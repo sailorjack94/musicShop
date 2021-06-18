@@ -42,4 +42,13 @@ public class MusicShop {
             stock.remove(instrument);
         }
     }
+
+    public int totalProfitInStock(){
+        int profit = 0;
+        for (ISell x : stock){
+            profit += x.calculateMarkup();
+        }
+        return profit;
+    }
+
 }
