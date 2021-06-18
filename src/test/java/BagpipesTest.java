@@ -13,7 +13,7 @@ public class BagpipesTest {
 
     @Before
     public void before(){
-        pipes = new HighlandBagpipes("Bagpipes", "Highland", KeyTypes.BFLAT);
+        pipes = new HighlandBagpipes("Bagpipes", "Highland", KeyTypes.BFLAT, "Mahogany");
     }
 
     @Test
@@ -29,5 +29,10 @@ public class BagpipesTest {
     @Test
     public void pipesHaveKey() {
         assertEquals(KeyTypes.BFLAT, pipes.getKey());
+    }
+
+    @Test
+    public void pipesHaveMaterial(){
+        assertEquals("Mahogany", pipes.getMaterial());
     }
 }

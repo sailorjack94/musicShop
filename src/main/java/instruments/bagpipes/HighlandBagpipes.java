@@ -4,29 +4,15 @@ import enums.KeyTypes;
 
 public class HighlandBagpipes extends BagpipeInstrument{
 
-    private final String family;
-    private final String style;
-    private final KeyTypes key;
+    private final String material;
 
-    public HighlandBagpipes(String family, String style, KeyTypes key){
+    public HighlandBagpipes(String family, String style, KeyTypes key, String material){
         super(family, style, key);
-        this.family = "Bagpipes";
-        this.style = "Highland";
-        this.key = KeyTypes.BFLAT;
+        this.material = material;
     }
 
-    @Override
-    public String getFamily() {
-        return family;
+    public String getMaterial(){
+        return material;
     }
 
-    @Override
-    public String getStyle() {
-        return style;
-    }
-
-    @Override
-    public KeyTypes getKey() {
-        return key;
-    }
 }
