@@ -6,8 +6,8 @@ public class HighWhistle extends WhistleInstrument{
 
     private final KeyTypes key;
 
-    public HighWhistle(String family, String body, String style, KeyTypes key){
-        super(family, body, style);
+    public HighWhistle(String family, int wholesalePrice, int sellPrice, String body, String style, KeyTypes key){
+        super(family, wholesalePrice, sellPrice, body, style);
         this.key = key;
     }
 

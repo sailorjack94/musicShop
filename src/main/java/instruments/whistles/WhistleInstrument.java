@@ -7,8 +7,8 @@ public abstract class WhistleInstrument extends Instrument {
     private final String body;
     private final String style;
 
-    public WhistleInstrument(String family, String body, String style){
-        super(family);
+    public WhistleInstrument(String family, int wholesalePrice, int sellPrice, String body, String style){
+        super(family, wholesalePrice, sellPrice);
         this.body = body;
         this.style = style;
     }

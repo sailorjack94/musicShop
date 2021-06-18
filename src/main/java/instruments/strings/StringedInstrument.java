@@ -8,8 +8,8 @@ public abstract class StringedInstrument extends Instrument {
     private final String body;
     private final String style;
 
-    public StringedInstrument(String family, String style, int strings, String body){
-        super(family);
+    public StringedInstrument(String family, int wholesalePrice, int sellPrice, String style, int strings, String body){
+        super(family, wholesalePrice, sellPrice);
         this.style = style;
         this.strings = strings;
         this.body = body;

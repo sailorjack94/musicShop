@@ -13,7 +13,7 @@ public class HighWhistleTest {
 
     @Before
     public void before(){
-        whistle = new HighWhistle("Whistle", "Aluminium", "High", KeyTypes.D);
+        whistle = new HighWhistle("Whistle", 45, 70, "Aluminium", "High", KeyTypes.D);
     }
 
     @Test
@@ -34,5 +34,15 @@ public class HighWhistleTest {
     @Test
     public void hasKey(){
         assertEquals(KeyTypes.D, whistle.getKey());
+    }
+
+    @Test
+    public void hasWholesalePrice(){
+        assertEquals(45, whistle.getWholesalePrice());
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(70, whistle.getSellPrice());
     }
 }

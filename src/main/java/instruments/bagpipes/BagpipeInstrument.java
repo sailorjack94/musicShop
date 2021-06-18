@@ -8,8 +8,8 @@ public abstract class BagpipeInstrument extends Instrument {
     private final String style;
     private final KeyTypes key;
 
-    public BagpipeInstrument(String family, String style, KeyTypes key){
-        super(family);
+    public BagpipeInstrument(String family, int wholesalePrice, int sellPrice, String style, KeyTypes key){
+        super(family, wholesalePrice, sellPrice);
         this.style = style;
         this.key = key;
     }

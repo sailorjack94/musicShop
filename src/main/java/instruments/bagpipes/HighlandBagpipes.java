@@ -6,8 +6,8 @@ public class HighlandBagpipes extends BagpipeInstrument{
 
     private final String material;
 
-    public HighlandBagpipes(String family, String style, KeyTypes key, String material){
-        super(family, style, key);
+    public HighlandBagpipes(String family, int wholesalePrice, int sellPrice, String style, KeyTypes key, String material){
+        super(family, wholesalePrice, sellPrice, style, key);
         this.material = material;
     }
 

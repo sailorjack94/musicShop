@@ -12,7 +12,7 @@ public class AcousticTest {
 
     @Before
     public void before(){
-        guitar = new AcousticGuitar("Guitar", "Electro-Acoustic", 6, "Hollow", "Fishman");
+        guitar = new AcousticGuitar("Guitar", 250, 315, "Electro-Acoustic", 6, "Hollow", "Fishman");
     }
 
     @Test
@@ -38,5 +38,14 @@ public class AcousticTest {
     @Test
     public void hasManufacturer(){
         assertEquals("Fishman", guitar.getManufacturer());
+    }
+
+    @Test
+    public void hasWholesalePrice(){
+        assertEquals(250, guitar.getWholesalePrice());
+    }
+    @Test
+    public void hasSellPrice(){
+        assertEquals(315, guitar.getSellPrice());
     }
 }

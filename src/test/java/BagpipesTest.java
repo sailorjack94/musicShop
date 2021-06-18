@@ -13,7 +13,7 @@ public class BagpipesTest {
 
     @Before
     public void before(){
-        pipes = new HighlandBagpipes("Bagpipes", "Highland", KeyTypes.BFLAT, "Mahogany");
+        pipes = new HighlandBagpipes("Bagpipes", 800, 1200, "Highland", KeyTypes.BFLAT, "Mahogany");
     }
 
     @Test
@@ -34,5 +34,15 @@ public class BagpipesTest {
     @Test
     public void pipesHaveMaterial(){
         assertEquals("Mahogany", pipes.getMaterial());
+    }
+
+    @Test
+    public void hasWholesalePrice(){
+        assertEquals(800, pipes.getWholesalePrice());
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(1200, pipes.getSellPrice());
     }
 }
