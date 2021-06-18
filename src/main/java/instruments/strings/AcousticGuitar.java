@@ -1,6 +1,8 @@
 package instruments.strings;
 
-public class AcousticGuitar extends StringedInstrument{
+import behaviours.IPlay;
+
+public class AcousticGuitar extends StringedInstrument implements IPlay {
 
     private final String manufacturer;
 
@@ -12,6 +14,10 @@ public class AcousticGuitar extends StringedInstrument{
 
     public String getManufacturer(){
         return manufacturer;
+    }
+
+    public String playMe(){
+        return "Soft strumming.";
     }
 
 }

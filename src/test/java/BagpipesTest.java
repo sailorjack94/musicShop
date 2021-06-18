@@ -45,4 +45,9 @@ public class BagpipesTest {
     public void hasSellPrice(){
         assertEquals(1200, pipes.getSellPrice());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("A roaring skirl.", pipes.playMe());
+    }
 }

@@ -48,4 +48,8 @@ public class AcousticTest {
     public void hasSellPrice(){
         assertEquals(315, guitar.getSellPrice());
     }
+    @Test
+    public void canPlay(){
+        assertEquals("Soft strumming.", guitar.playMe());
+    }
 }

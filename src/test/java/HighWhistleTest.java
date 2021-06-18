@@ -45,4 +45,9 @@ public class HighWhistleTest {
     public void hasSellPrice(){
         assertEquals(70, whistle.getSellPrice());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Shrill and whistle-y.", whistle.playMe());
+    }
 }

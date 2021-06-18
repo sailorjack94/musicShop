@@ -1,8 +1,9 @@
 package instruments.whistles;
 
+import behaviours.IPlay;
 import enums.KeyTypes;
 
-public class HighWhistle extends WhistleInstrument{
+public class HighWhistle extends WhistleInstrument implements IPlay {
 
     private final KeyTypes key;
 
@@ -13,5 +14,9 @@ public class HighWhistle extends WhistleInstrument{
 
     public KeyTypes getKey(){
         return key;
+    }
+
+    public String playMe(){
+        return "Shrill and whistle-y.";
     }
 }

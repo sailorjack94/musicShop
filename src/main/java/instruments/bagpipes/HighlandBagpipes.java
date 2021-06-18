@@ -1,8 +1,10 @@
 package instruments.bagpipes;
 
+import behaviours.IPlay;
 import enums.KeyTypes;
+import instruments.Instrument;
 
-public class HighlandBagpipes extends BagpipeInstrument{
+public class HighlandBagpipes extends BagpipeInstrument implements IPlay {
 
     private final String material;
 
@@ -15,4 +17,8 @@ public class HighlandBagpipes extends BagpipeInstrument{
         return material;
     }
 
+    @Override
+    public String playMe() {
+        return "A roaring skirl.";
+    }
 }
